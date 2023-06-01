@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "illegalsinmyyard",
+  "version": "${version}",
+  "name": "IllegalsInMyYard",
+  "description": "Unpatches the patchy!",
+  "authors": [
+    "VidTu"
+  ],
+  "contact": {
+    "homepage": "https://github.com/VidTu/IllegalsInMyYard",
+    "sources": "https://github.com/VidTu/IllegalsInMyYard",
+    "issues": "https://github.com/VidTu/IllegalsInMyYard/issues",
+    "email": "imvidtu@proton.me"
+  },
+  "license": "The Unlicense",
+  "icon": "illegalsinmyyard.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.vidtu.illegalsinmyyard.IIMYFabric"
+    ]
+  },
+  "mixins": [
+    "illegalsinmyyard.mixins.json"
+  ]
+}

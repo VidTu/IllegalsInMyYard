@@ -1,0 +1,30 @@
+plugins {
+    id 'fabric-loom' version '1.2-SNAPSHOT'
+}
+
+group = 'ru.vidtu.illegalsinmyyard'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    maven { url 'https://maven.minecraftforge.net/' }
+}
+
+dependencies {
+    minecraft 'com.mojang:minecraft:1.19.4'
+    mappings loom.officialMojangMappings()
+    modImplementation 'net.fabricmc:fabric-loader:0.14.21'
+}
+
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') {
+        expand 'version': project.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = 'UTF-8'
+    it.options.release.set(8)
+}
