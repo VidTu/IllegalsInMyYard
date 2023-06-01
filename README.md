@@ -11,4 +11,4 @@ Fabric API (or Quilt Standard Libraries) is **NOT** required.
 
 ## License
 
-[The Unlicense](https://github.com/VidTu/IllegalsInMyYard/releases)
+[The Unlicense](LICENSE)
